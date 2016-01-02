@@ -6,7 +6,7 @@ QCOM_BOARD_PLATFORMS += msm8226
 
 QSD8K_BOARD_PLATFORMS := qsd8k
 
-TARGET_USE_VENDOR_CAMERA_EXT := true
+#TARGET_USE_VENDOR_CAMERA_EXT := true
 
 ANDROID_COMPILE_WITH_JACK := false
 
@@ -150,13 +150,13 @@ FM += libqcomfm_jni
 FM += libfmjni
 
 #GPS
-GPS_HARDWARE := gps.conf
-GPS_HARDWARE += gps.default
-GPS_HARDWARE += gps.mahimahi
-GPS_HARDWARE += libloc_adapter
-GPS_HARDWARE += libgps.utils
-GPS_HARDWARE += libloc_eng
-GPS_HARDWARE += libloc_api_v02
+#GPS_HARDWARE := gps.conf
+#GPS_HARDWARE += gps.default
+#GPS_HARDWARE += gps.mahimahi
+#GPS_HARDWARE += libloc_adapter
+#GPS_HARDWARE += libgps.utils
+#GPS_HARDWARE += libloc_eng
+#GPS_HARDWARE += libloc_api_v02
 
 #HDMID
 HDMID := hdmid
@@ -267,22 +267,22 @@ LIB_NL := libnl_2
 LIB_XML2 := libxml2
 
 #LIBCAMERA
-LIBCAMERA := camera.apq8084
-LIBCAMERA += camera.msm8974
-LIBCAMERA += camera.msm8226
-LIBCAMERA += camera.msm8610
-LIBCAMERA += camera.msm8960
-LIBCAMERA += camera.msm8660
-LIBCAMERA += camera.msm7630_surf
-LIBCAMERA += camera.msm7630_fusion
-LIBCAMERA += camera.msm7627a
-LIBCAMERA += libcamera
-LIBCAMERA += libmmcamera_interface
-LIBCAMERA += libmmcamera_interface2
-LIBCAMERA += libmmjpeg_interface
-LIBCAMERA += libqomx_core
-LIBCAMERA += mm-qcamera-app
-LIBCAMERA += camera_test
+#LIBCAMERA := camera.apq8084
+#LIBCAMERA += camera.msm8974
+#LIBCAMERA += camera.msm8226
+#LIBCAMERA += camera.msm8610
+#LIBCAMERA += camera.msm8960
+#LIBCAMERA += camera.msm8660
+#LIBCAMERA += camera.msm7630_surf
+#LIBCAMERA += camera.msm7630_fusion
+#LIBCAMERA += camera.msm7627a
+#LIBCAMERA += libcamera
+#LIBCAMERA += libmmcamera_interface
+#LIBCAMERA += libmmcamera_interface2
+#LIBCAMERA += libmmjpeg_interface
+#LIBCAMERA += libqomx_core
+#LIBCAMERA += mm-qcamera-app
+#LIBCAMERA += camera_test
 LIBCAMERA += org.codeaurora.camera
 
 #LIBCOPYBIT
@@ -529,8 +529,8 @@ CRDA += linville.key.pub.pem
 CRDA += init.crda.sh
 
 #WLAN
-WLAN := prima_wlan.ko
-WLAN += pronto_wlan.ko
+#WLAN := prima_wlan.ko
+#WLAN += pronto_wlan.ko
 
 PRODUCT_PACKAGES := \
     AccountAndSyncSettings \
@@ -538,24 +538,17 @@ PRODUCT_PACKAGES := \
     AlarmProvider \
     Bluetooth \
     BluetoothExt \
-    BTTestApp \
-    HiddTestApp \
     Calculator \
     Calendar \
-    Camera \
     CellBroadcastReceiver \
     CertInstaller \
     DrmProvider \
     Email \
     Gallery2 \
     LatinIME \
-    Launcher2 \
-    Mms \
-    Music \
     Phone \
     Provision \
     Protips \
-    QuickSearchBox \
     Settings \
     Sync \
     SystemUI \
@@ -563,9 +556,7 @@ PRODUCT_PACKAGES := \
     CalendarProvider \
     SyncProvider \
     IM \
-    VoiceDialer \
     FM2 \
-    FMRadio \
     FMRecord \
     VideoEditor
 
@@ -590,8 +581,8 @@ PRODUCT_PACKAGES += $(DATA_OS)
 PRODUCT_PACKAGES += $(E2FSPROGS)
 PRODUCT_PACKAGES += $(EBTABLES)
 PRODUCT_PACKAGES += $(FASTPOWERON)
-PRODUCT_PACKAGES += $(FM)
-PRODUCT_PACKAGES += $(GPS_HARDWARE)
+#PRODUCT_PACKAGES += $(FM)
+#PRODUCT_PACKAGES += $(GPS_HARDWARE)
 PRODUCT_PACKAGES += $(HDMID)
 PRODUCT_PACKAGES += $(HOSTAPD)
 PRODUCT_PACKAGES += $(I420CC)
@@ -642,7 +633,7 @@ PRODUCT_PACKAGES += $(VT_JNI)
 PRODUCT_PACKAGES += $(VT_QTI_PERMISSIONS)
 PRODUCT_PACKAGES += $(IMS_SETTINGS)
 PRODUCT_PACKAGES += $(CRDA)
-PRODUCT_PACKAGES += $(WLAN)
+#PRODUCT_PACKAGES += $(WLAN)
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
